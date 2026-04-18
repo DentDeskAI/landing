@@ -206,7 +206,7 @@ const saveLead = (payload) => {
 
 const buildLeadMessage = ({ phone, name, clinic }) => {
   return [
-    "Запрос с сайта DentDesk",
+    "Здравствуйте!\nЗапрос с сайта DentDesk",
     "",
     `Номер WhatsApp: ${phone}`,
     `Имя: ${name}`,
@@ -218,8 +218,9 @@ const buildLeadMessage = ({ phone, name, clinic }) => {
 
 const buildWhatsAppLink = ({ phone, name, clinic }) => {
   const message = encodeURIComponent(buildLeadMessage({ phone, name, clinic }));
-  const cleanedPhone = phone.replace(/\D/g, "");
-  return `https://wa.me/${cleanedPhone}?text=${message}`;
+  const myPhone = 77058106425
+  console.log(myPhone)
+  return `https://wa.me/${myPhone}?text=${message}`;
 };
 
 const sendLeadByWhatsApp = (payload) => {
