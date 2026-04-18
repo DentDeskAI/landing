@@ -216,15 +216,15 @@ const buildLeadMessage = ({ phone, name, clinic }) => {
   ].join("\n");
 };
 
-const buildMailtoLink = ({ phone, name, clinic }) => {
-  const subject = encodeURIComponent("Записаться на консультацию");
-  const body = encodeURIComponent(buildLeadMessage({ phone, name, clinic }));
-  return `mailto:dentdesk.kz@gmail.com?subject=${subject}&body=${body}`;
+const buildWhatsAppLink = ({ phone, name, clinic }) => {
+  const message = encodeURIComponent(buildLeadMessage({ phone, name, clinic }));
+  const cleanedPhone = phone.replace(/\D/g, "");
+  return `https://wa.me/${cleanedPhone}?text=${message}`;
 };
 
-const sendLeadByMail = (payload) => {
-  const mailto = buildMailtoLink(payload);
-  window.open(mailto, "_blank");
+const sendLeadByWhatsApp = (payload) => {
+  const whatsappUrl = buildWhatsAppLink(payload);
+  window.open(whatsappUrl, "_blank");
 };
 
 leadForms.forEach((form) => {
@@ -255,7 +255,7 @@ leadForms.forEach((form) => {
 
     const payload = { phone, name, clinic };
     saveLead(payload);
-    sendLeadByMail(payload);
+    sendLeadByWhatsApp(payload);
 
     feedback.textContent = getText("formSuccess");
     feedback.classList.add("is-success");
