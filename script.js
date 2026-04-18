@@ -1,4 +1,5 @@
 const modal = document.querySelector("#lead-modal");
+const brandMark = document.querySelector(".brand-mark");
 const openButtons = document.querySelectorAll("[data-open-modal]");
 const closeButtons = document.querySelectorAll("[data-close-modal]");
 const leadForms = document.querySelectorAll("[data-lead-form]");
