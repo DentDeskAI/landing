@@ -1,0 +1,427 @@
+{
+  "title": {
+    "en": "DentDesk — AI for dental clinics",
+    "ru": "DentDesk — ИИ для стоматологий",
+    "kz": "DentDesk — стоматологиялар үшін ИИ"
+  },
+  "metaDescription": {
+    "en": "DentDesk is a niche AI for dental clinics: patient booking 24/7, a single dialog window, and smart lead routing.",
+    "ru": "DentDesk — нишевый ИИ для стоматологий: запись пациентов 24/7, единое окно диалогов и умное распределение лидов.",
+    "kz": "DentDesk — стоматологиялар үшін маманданған ИИ: пациенттерді 24/7 жазу, бір терезелі чат және ақылды лида бағыттау."
+  },
+  "metaKeywords": {
+    "en": "DentDesk, AI for dental clinics, booking, WhatsApp automation, lead routing",
+    "ru": "DentDesk, ИИ для стоматологий, запись, WhatsApp, маршрутизация лидов",
+    "kz": "DentDesk, стоматологиялар үшін ИИ, жазу, WhatsApp, лид бағыттау"
+  },
+  "brandText": {
+    "en": "DentDesk",
+    "ru": "DentDesk",
+    "kz": "DentDesk"
+  },
+  "navPlatform": {
+    "en": "Platform",
+    "ru": "Платформа",
+    "kz": "Платформа"
+  },
+  "navContact": {
+    "en": "Contacts",
+    "ru": "Контакты",
+    "kz": "Контакты"
+  },
+  "navLogin": {
+    "en": "Login",
+    "ru": "Войти",
+    "kz": "Кіру"
+  },
+  "heroEyebrow": {
+    "en": "Niche AI for dental clinics",
+    "ru": "Нишевый ИИ для стоматологий",
+    "kz": "Стоматологиялар үшін маманданған ИИ"
+  },
+  "heroTitle": {
+    "en": "Patients book without friction, and the team works in one calm window.",
+    "ru": "Пациенты записываются без раздражения, а команда работает в одном спокойном окне.",
+    "kz": "Пациенттер ренжімей жазылады, ал команда бір тыныш терезеде жұмыс істейді."
+  },
+  "heroText": {
+    "en": "DentDesk handles the initial dialogue, lead qualification and chair routing. Your admins stop drowning in WhatsApp, and doctors see a steady stream of bookings.",
+    "ru": "DentDesk берет на себя первичный диалог, квалификацию лида и маршрутизацию по креслам. Ваши администраторы не тонут в WhatsApp, а врачи видят ровный поток записей.",
+    "kz": "DentDesk алғашқы әңгімені, лидті іріктеуді және орындарға бағыттауды өз мойнына алады. Әкімшілер WhatsApp-та батып кетпейді, дәрігерлер жазбалардың тұрақты ағынын көреді."
+  },
+  "heroCTA": {
+    "en": "Book a consultation",
+    "ru": "Записаться на консультацию",
+    "kz": "Кеңесуге жазылу"
+  },
+  "heroSecondaryLink": {
+    "en": "See the workflow",
+    "ru": "Посмотреть сценарий работы",
+    "kz": "Жұмыс сценариін қарау"
+  },
+  "heroNote": {
+    "en": "Our AI agents specialize only in dental business and speak the clinic language.",
+    "ru": "Наши ИИ-агенты специализируются только на стоматологическом бизнесе и разговаривают языком клиники.",
+    "kz": "Біздің ИИ агенттеріміз тек стоматологиялық бизнеске маманданған және клиниканың тілімен сөйлейді."
+  },
+  "panelLabel": {
+    "en": "AI receptionist",
+    "ru": "ИИ-регистратор",
+    "kz": "ИИ регистратор"
+  },
+  "panelTitle": {
+    "en": "Live lead intake 24/7",
+    "ru": "Живой прием заявок 24/7",
+    "kz": "Тірі сұраныстар 24/7"
+  },
+  "liveStatus": {
+    "en": "online",
+    "ru": "online",
+    "kz": "online"
+  },
+  "messageNameLead": {
+    "en": "New lead",
+    "ru": "Новый лид",
+    "kz": "Жаңа лид"
+  },
+  "messageTextLead": {
+    "en": "Hello, I need to book a cleaning tomorrow after 18:00.",
+    "ru": "Здравствуйте, нужна запись на чистку завтра после 18:00.",
+    "kz": "Сәлем, ертең 18:00-ден кейін тазалау үшін жазылғым келеді."
+  },
+  "messageNameDentDesk": {
+    "en": "DentDesk",
+    "ru": "DentDesk",
+    "kz": "DentDesk"
+  },
+  "messageTextDentDesk": {
+    "en": "I will find a slot. Please specify the clinic and whether you prefer WhatsApp confirmation.",
+    "ru": "Подберу окно. Уточните филиал и удобно ли подтвердить запись в WhatsApp?",
+    "kz": "Орын табамын. Филиалды көрсетіңіз және жазбаны WhatsApp арқылы растайтынды қалағаныңызды айтыңыз."
+  },
+  "messageNameRouting": {
+    "en": "Routing",
+    "ru": "Маршрутизация",
+    "kz": "Бөлу"
+  },
+  "messageTextRouting": {
+    "en": "Therapy, Abay branch, confirmation received, slot found.",
+    "ru": "Терапия, филиал Абая, подтверждение получено, слот найден.",
+    "kz": "Терапия, Абай филиалы, растау алынды, орын табылды."
+  },
+  "statsOneValue": {
+    "en": "5 min",
+    "ru": "5 мин",
+    "kz": "5 мин"
+  },
+  "statsOneLabel": {
+    "en": "to launch the first agent",
+    "ru": "на запуск первого агента",
+    "kz": "алғашқы агентті іске қосуға"
+  },
+  "statsTwoValue": {
+    "en": "1 window",
+    "ru": "1 окно",
+    "kz": "1 терезе"
+  },
+  "statsTwoLabel": {
+    "en": "for all new dialogues",
+    "ru": "для всех новых диалогов",
+    "kz": "барлық жаңа әңгімелер үшін"
+  },
+  "statsThreeValue": {
+    "en": "24/7",
+    "ru": "24/7",
+    "kz": "24/7"
+  },
+  "statsThreeLabel": {
+    "en": "response without missed leads",
+    "ru": "ответ без пропущенных лидов",
+    "kz": "өткірліктерсіз жауап"
+  },
+  "statsFourValue": {
+    "en": "0 chaos",
+    "ru": "0 хаоса",
+    "kz": "0 хаос"
+  },
+  "statsFourLabel": {
+    "en": "in manual message review",
+    "ru": "в ручном разборе переписок",
+    "kz": "хабарламаларды қолмен қарауда"
+  },
+  "proofKicker": {
+    "en": "Before and after implementation",
+    "ru": "До и после внедрения",
+    "kz": "Енгізгенге дейін және кейін"
+  },
+  "proofHeading": {
+    "en": "The clinic stops losing leads between calls, shifts and chats.",
+    "ru": "Клиника перестает терять лиды между звонками, сменами и чатами.",
+    "kz": "Клиника қоңыраулар, ауысымдар және чаттар арасында лидтерді жоғалтуды тоқтатады."
+  },
+  "proofNowTitle": {
+    "en": "Now",
+    "ru": "Сейчас",
+    "kz": "Қазір"
+  },
+  "proofNowItem1": {
+    "en": "Leads are lost because responses are not fast enough",
+    "ru": "Лиды теряются, потому что не успели ответить вовремя",
+    "kz": "Жауап уақтылы берілмегендіктен лидтер жоғалады"
+  },
+  "proofNowItem2": {
+    "en": "The clinic WhatsApp becomes endless noise",
+    "ru": "Рабочий WhatsApp клиники превращается в бесконечный шум",
+    "kz": "Клиниканың жұмыс WhatsApp-ы шексіз шуға айналады"
+  },
+  "proofNowItem3": {
+    "en": "Up to 30% of patients do not get a same-day reply",
+    "ru": "До 30% пациентов не получают ответ в тот же день",
+    "kz": "Пациенттердің 30%-ына дейіні сол күні жауап алмайды"
+  },
+  "proofNowItem4": {
+    "en": "The admin repeats the same questions dozens of times manually",
+    "ru": "Администратор вручную уточняет одно и то же десятки раз",
+    "kz": "Әкімші бірдей сұрақтарды қолмен ондап рет қайталайды"
+  },
+  "proofThenTitle": {
+    "en": "DentDesk",
+    "ru": "DentDesk",
+    "kz": "DentDesk"
+  },
+  "proofThenItem1": {
+    "en": "The AI agent launches in 5 minutes for your clinic",
+    "ru": "ИИ-агент запускается за 5 минут под вашу клинику",
+    "kz": "ИИ агенті клиникаңызға 5 минутта іске қосылады"
+  },
+  "proofThenItem2": {
+    "en": "All dialogues are gathered in one window without extra chaos",
+    "ru": "Все диалоги собираются в одном окне без лишнего хаоса",
+    "kz": "Барлық әңгімелер артық хаоссыз бір терезеге жиналады"
+  },
+  "proofThenItem3": {
+    "en": "The lead automatically goes to the right chair and branch",
+    "ru": "Лид автоматически попадает на нужное кресло и филиал",
+    "kz": "Лид автоматты түрде дұрыс орын мен филиалға жеткізіледі"
+  },
+  "proofThenItem4": {
+    "en": "The team receives only a prepared patient",
+    "ru": "Команда получает только уже подготовленного пациента",
+    "kz": "Командаға тек дайын пациент келеді"
+  },
+  "featuresKicker": {
+    "en": "What the clinic gets",
+    "ru": "Что получает клиника",
+    "kz": "Клиника не алады"
+  },
+  "featuresHeading": {
+    "en": "Not just a chat bot, but an operational layer for booking, confirmation and flow redistribution.",
+    "ru": "Не просто чат-бот, а операционный слой для записи, подтверждения и перераспределения потока.",
+    "kz": "Жазуға, растауға және ағымды қайта бөлуге арналған тек чат-бот емес, операциялық қабат."
+  },
+  "featureOneTitle": {
+    "en": "Booking without queueing for a reply",
+    "ru": "Запись без очереди на ответ",
+    "kz": "Жауап күту кезегі жоқ жазылу"
+  },
+  "featureOneText": {
+    "en": "DentDesk leads the first dialogue, collects context and brings the patient to confirmation while the admin handles live appointments.",
+    "ru": "DentDesk ведет первый диалог, собирает контекст и доводит пациента до подтверждения, пока администратор занят живым приемом.",
+    "kz": "DentDesk алғашқы әңгімені жүргізеді, контекст жинайды және пациентті растауға жеткізеді, ал әкімші тірі қабылдаумен айналысады."
+  },
+  "featureTwoTitle": {
+    "en": "Unified dialogue center",
+    "ru": "Единый центр диалогов",
+    "kz": "Біріккен әңгімелер орталығы"
+  },
+  "featureTwoText": {
+    "en": "All new requests, statuses and scenario restarts are gathered in one interface instead of scattered chats and notes.",
+    "ru": "Все новые обращения, статусы и перезапуски сценариев собраны в одном интерфейсе вместо разбросанных чатов и заметок.",
+    "kz": "Барлық жаңа өтініштер, статус және сценарийді қайта бастауар бір интерфейсте жинақталған, шашыраған чаттар мен жазбалар орнына."
+  },
+  "featureThreeTitle": {
+    "en": "Routing by doctor profile",
+    "ru": "Маршрутизация по профилю врача",
+    "kz": "Дәрігер профилі бойынша бағыттау"
+  },
+  "featureThreeText": {
+    "en": "The system understands service type, branch, urgency and correctly directs the lead to the place where it can be booked faster.",
+    "ru": "Система понимает тип услуги, филиал, срочность и корректно направляет лида туда, где его можно закрыть в запись быстрее.",
+    "kz": "Жүйе қызмет түрін, филиалды, шұғылдығын түсінеді және лидті оны тезірек жазуға болатын жерге дұрыс бағыттайды."
+  },
+  "tickerItemOne": {
+    "en": "WhatsApp",
+    "ru": "WhatsApp",
+    "kz": "WhatsApp"
+  },
+  "tickerItemTwo": {
+    "en": "Booking scripts",
+    "ru": "Сценарии записи",
+    "kz": "Жазу сценарийлері"
+  },
+  "tickerItemThree": {
+    "en": "Visit confirmation",
+    "ru": "Подтверждение визита",
+    "kz": "Келудің расталуы"
+  },
+  "tickerItemFour": {
+    "en": "Branch distribution",
+    "ru": "Распределение по филиалам",
+    "kz": "Филиал бойынша бөлу"
+  },
+  "tickerItemFive": {
+    "en": "Follow-up warming",
+    "ru": "Повторный прогрев",
+    "kz": "Қайталау жылыту"
+  },
+  "workflowKicker": {
+    "en": "One-day scenario",
+    "ru": "Сценарий за один день",
+    "kz": "Бір күндік сценарий"
+  },
+  "workflowHeading": {
+    "en": "The team sees only what requires a human decision.",
+    "ru": "Команда видит только то, что требует решения человеком.",
+    "kz": "Команда тек адамның шешімін талап ететінін көреді."
+  },
+  "workflowStepOneTitle": {
+    "en": "The patient writes",
+    "ru": "Пациент пишет",
+    "kz": "Пациент жазады"
+  },
+  "workflowStepOneText": {
+    "en": "DentDesk replies instantly, clarifies the service, branch and desired time without making the person wait for a free admin.",
+    "ru": "DentDesk отвечает моментально, уточняет услугу, филиал и желаемое время, не заставляя человека ждать свободного администратора.",
+    "kz": "DentDesk бірден жауап береді, қызметті, филиалды және қалаған уақытты нақтылайды, адамды бос әкімшіні күттірмейді."
+  },
+  "workflowStepTwoTitle": {
+    "en": "The system qualifies the lead",
+    "ru": "Система квалифицирует лид",
+    "kz": "Жүйе лидті іріктейді"
+  },
+  "workflowStepTwoText": {
+    "en": "The request is broken down by service type, doctor, urgency and funnel stage. Repeated questions and unclear cases are handed to a staff member.",
+    "ru": "Запрос раскладывается по типу услуги, врачу, срочности и этапу воронки. Повторные вопросы и неясные кейсы отдаются сотруднику.",
+    "kz": "Талап қызмет түрі, дәрігер, шұғылдық және қоршау кезеңі бойынша бөлінеді. Қайталап сұрақтар мен түсініксіз жағдайлар қызметкерге беріледі."
+  },
+  "workflowStepThreeTitle": {
+    "en": "The chair receives a prepared patient",
+    "ru": "Кресло получает подготовленного пациента",
+    "kz": "Кресло дайын пациентті алады"
+  },
+  "workflowStepThreeText": {
+    "en": "The team sees collected context, confirmed slot and dialog history instead of a raw stream of messages without structure.",
+    "ru": "Команда видит собранный контекст, подтвержденный слот и историю диалога, а не сырой поток сообщений без структуры.",
+    "kz": "Команда құрылымы жоқ шикі хабарлар ағынының орнына жиналған контекстті, расталған слотты және диалог тарихын көреді."
+  },
+  "contactKicker": {
+    "en": "Contacts",
+    "ru": "Контакты",
+    "kz": "Байланыстар"
+  },
+  "contactHeading": {
+    "en": "We will show how DentDesk integrates into your clinic without a long launch.",
+    "ru": "Покажем, как DentDesk встраивается в вашу клинику без долгого запуска.",
+    "kz": "DentDesk-тың ұзақ іске қосусыз клиникаңызға қалай кіретінін көрсетеміз."
+  },
+  "contactText": {
+    "en": "Leave a WhatsApp number and name. We will contact you, show the workflow on your cases and assemble the first working configuration for branches, services and team load.",
+    "ru": "Оставьте номер WhatsApp и имя. Мы свяжемся, покажем сценарий на ваших кейсах и соберем первую рабочую конфигурацию под филиалы, услуги и загрузку команды.",
+    "kz": "WhatsApp нөмірі мен атын қалдырыңыз. Біз сізбен байланысып, сіздің кейстеріңіз бойынша жұмыс сценариін көрсетіп, филиалдар, қызметтер және команда жүктемесіне алғашқы жұмыс конфигурациясын құрамыз."
+  },
+  "contactEmailLabel": {
+    "en": "dentdesk.kz@gmail.com",
+    "ru": "dentdesk.kz@gmail.com",
+    "kz": "dentdesk.kz@gmail.com"
+  },
+  "contactWhatsappLabel": {
+    "en": "WhatsApp",
+    "ru": "WhatsApp",
+    "kz": "WhatsApp"
+  },
+  "contactEmailNote": {
+    "en": "Reply during business hours",
+    "ru": "Ответ в течение рабочего дня",
+    "kz": "Жұмыс күнінде жауап"
+  },
+  "formKicker": {
+    "en": "Startup consultation",
+    "ru": "Стартовая консультация",
+    "kz": "Бастапқы кеңес"
+  },
+  "inputPhoneLabel": {
+    "en": "WhatsApp number",
+    "ru": "Номер WhatsApp",
+    "kz": "WhatsApp нөмірі"
+  },
+  "inputPhonePlaceholder": {
+    "en": "+7 (700) 123-45-67",
+    "ru": "+7 (700) 123-45-67",
+    "kz": "+7 (700) 123-45-67"
+  },
+  "inputNameLabel": {
+    "en": "Name",
+    "ru": "Имя",
+    "kz": "Аты"
+  },
+  "inputNamePlaceholder": {
+    "en": "Alexander Pushkin",
+    "ru": "Александр Пушкин",
+    "kz": "Александр Пушкин"
+  },
+  "inputClinicLabel": {
+    "en": "Clinic",
+    "ru": "Клиника",
+    "kz": "Клиника"
+  },
+  "inputClinicPlaceholder": {
+    "en": "Dent Smile on Abay",
+    "ru": "Dent Smile на Абая",
+    "kz": "Dent Smile Абаяда"
+  },
+  "formSubmit": {
+    "en": "Submit",
+    "ru": "Отправить",
+    "kz": "Жіберу"
+  },
+  "formErrorMissingFields": {
+    "en": "Fill in all fields so we can contact you.",
+    "ru": "Заполните все поля, чтобы мы могли связаться с вами.",
+    "kz": "Сізбен байланысу үшін барлық өрістерді толтырыңыз."
+  },
+  "formErrorInvalidPhone": {
+    "en": "Enter a valid WhatsApp number.",
+    "ru": "Укажите корректный номер WhatsApp.",
+    "kz": "Дұрыс WhatsApp нөмірін көрсетіңіз."
+  },
+  "formSuccess": {
+    "en": "Request accepted. We will contact you and show the workflow for your clinic.",
+    "ru": "Заявка принята. Мы свяжемся с вами и покажем сценарий под вашу клинику.",
+    "kz": "Сұраныс қабылданды. Біз сізбен байланысып, клиникаңызға арналған жұмыс сценариін көрсетеміз."
+  },
+  "footerTitle": {
+    "en": "DentDesk",
+    "ru": "DentDesk",
+    "kz": "DentDesk"
+  },
+  "footerSubtitle": {
+    "en": "AI infrastructure for dental clinics",
+    "ru": "ИИ-инфраструктура для стоматологий",
+    "kz": "Стоматологиялар үшін ИИ инфрақұрылымы"
+  },
+  "modalKicker": {
+    "en": "Don't miss leads",
+    "ru": "Не упускайте лиды",
+    "kz": "Лидтерді жіберіп алмаңыз"
+  },
+  "modalTitle": {
+    "en": "Start working with DentDesk",
+    "ru": "Начните работу с DentDesk",
+    "kz": "DentDesk-пен жұмыс бастаңыз"
+  },
+  "modalCloseLabel": {
+    "en": "Close",
+    "ru": "Закрыть",
+    "kz": "Жабу"
+  }
+}

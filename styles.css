@@ -132,6 +132,34 @@ input {
   transition: background-color 180ms ease, transform 180ms ease;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-switcher-item {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 12px;
+  border-radius: 999px;
+  color: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.lang-switcher-item:hover {
+  background: rgba(17, 18, 22, 0.06);
+  transform: translateY(-1px);
+}
+
+.lang-switcher-item.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
 .topnav a:hover,
 .nav-login:hover {
   background: rgba(17, 18, 22, 0.06);
@@ -718,6 +746,11 @@ input {
   .nav-login {
     flex: 1 1 auto;
     text-align: center;
+  }
+
+  .lang-switcher {
+    flex: none;
+    margin-left: auto;
   }
 
   .section {

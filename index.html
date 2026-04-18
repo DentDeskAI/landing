@@ -6,8 +6,15 @@
     <meta
       name="description"
       content="DentDesk — нишевый ИИ для стоматологий: запись пациентов 24/7, единое окно диалогов и умное распределение лидов."
+      data-i18n-meta="metaDescription"
     />
-    <title>DentDesk — ИИ для стоматологий</title>
+    <meta
+      name="keywords"
+      content="DentDesk, ИИ для стоматологий, запись, WhatsApp, маршрутизация лидов"
+      data-i18n-meta="metaKeywords"
+    />
+    <title data-i18n="title">DentDesk — ИИ для стоматологий</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,18 +23,23 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
-  </head>
+</head>
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="DentDesk">
+          <a class="brand" href="#top" aria-label="DentDesk" data-i18n-aria-label="brandText">
           <span class="brand-mark"></span>
-          <span class="brand-text">DentDesk</span>
+          <span class="brand-text" data-i18n="brandText">DentDesk</span>
         </a>
         <nav class="topnav" aria-label="Основная навигация">
-          <a href="#proof">Платформа</a>
-          <a href="#contact">Контакты</a>
-          <button class="nav-login" type="button" data-open-modal>
+          <a href="#proof" data-i18n="navPlatform">Платформа</a>
+          <a href="#contact" data-i18n="navContact">Контакты</a>
+          <div class="lang-switcher" role="group" aria-label="Language selector">
+            <button type="button" class="lang-switcher-item" data-lang="ru">RU</button>
+            <button type="button" class="lang-switcher-item" data-lang="en">EN</button>
+            <button type="button" class="lang-switcher-item" data-lang="kz">KZ</button>
+          </div>
+          <button class="nav-login" type="button" data-open-modal data-i18n="navLogin">
             Войти
           </button>
         </nav>
@@ -36,23 +48,23 @@
       <main>
         <section class="hero section" id="top">
           <div class="hero-copy">
-            <p class="eyebrow reveal">Нишевый ИИ для стоматологий</p>
-            <h1 class="reveal">
+            <p class="eyebrow reveal" data-i18n="heroEyebrow">Нишевый ИИ для стоматологий</p>
+            <h1 class="reveal" data-i18n="heroTitle">
               Пациенты записываются без раздражения, а команда работает в одном
               спокойном окне.
             </h1>
-            <p class="hero-text reveal">
+            <p class="hero-text reveal" data-i18n="heroText">
               DentDesk берет на себя первичный диалог, квалификацию лида и
               маршрутизацию по креслам. Ваши администраторы не тонут в WhatsApp,
               а врачи видят ровный поток записей.
             </p>
             <div class="hero-actions reveal">
-              <button class="button-primary" type="button" data-open-modal>
+              <button class="button-primary" type="button" data-open-modal data-i18n="heroCTA">
                 Записаться на консультацию
               </button>
-              <a class="text-link" href="#proof">Посмотреть сценарий работы</a>
+              <a class="text-link" href="#proof" data-i18n="heroSecondaryLink">Посмотреть сценарий работы</a>
             </div>
-            <p class="hero-note reveal">
+            <p class="hero-note reveal" data-i18n="heroNote">
               Наши ИИ-агенты специализируются только на стоматологическом
               бизнесе и разговаривают языком клиники.
             </p>
@@ -61,46 +73,46 @@
           <div class="hero-panel reveal">
             <div class="panel-head">
               <div>
-                <p class="panel-label">ИИ-регистратор</p>
-                <p class="panel-title">Живой прием заявок 24/7</p>
+                <p class="panel-label" data-i18n="panelLabel">ИИ-регистратор</p>
+                <p class="panel-title" data-i18n="panelTitle">Живой прием заявок 24/7</p>
               </div>
-              <span class="live-pill">online</span>
+              <span class="live-pill" data-i18n="liveStatus">online</span>
             </div>
 
             <div class="message-stack" aria-hidden="true">
               <article class="message-card incoming">
-                <p class="message-name">Новый лид</p>
-                <p>Здравствуйте, нужна запись на чистку завтра после 18:00.</p>
+                <p class="message-name" data-i18n="messageNameLead">Новый лид</p>
+                <p data-i18n="messageTextLead">Здравствуйте, нужна запись на чистку завтра после 18:00.</p>
               </article>
               <article class="message-card outgoing">
-                <p class="message-name">DentDesk</p>
-                <p>
+                <p class="message-name" data-i18n="messageNameDentDesk">DentDesk</p>
+                <p data-i18n="messageTextDentDesk">
                   Подберу окно. Уточните филиал и удобно ли подтвердить запись в
                   WhatsApp?
                 </p>
               </article>
               <article class="message-card incoming accent">
-                <p class="message-name">Маршрутизация</p>
-                <p>Терапия, филиал Абая, подтверждение получено, слот найден.</p>
+                <p class="message-name" data-i18n="messageNameRouting">Маршрутизация</p>
+                <p data-i18n="messageTextRouting">Терапия, филиал Абая, подтверждение получено, слот найден.</p>
               </article>
             </div>
 
             <div class="stats-grid">
               <article>
-                <span>5 мин</span>
-                <p>на запуск первого агента</p>
+                <span data-i18n="statsOneValue">5 мин</span>
+                <p data-i18n="statsOneLabel">на запуск первого агента</p>
               </article>
               <article>
-                <span>1 окно</span>
-                <p>для всех новых диалогов</p>
+                <span data-i18n="statsTwoValue">1 окно</span>
+                <p data-i18n="statsTwoLabel">для всех новых диалогов</p>
               </article>
               <article>
-                <span>24/7</span>
-                <p>ответ без пропущенных лидов</p>
+                <span data-i18n="statsThreeValue">24/7</span>
+                <p data-i18n="statsThreeLabel">ответ без пропущенных лидов</p>
               </article>
               <article>
-                <span>0 хаоса</span>
-                <p>в ручном разборе переписок</p>
+                <span data-i18n="statsFourValue">0 хаоса</span>
+                <p data-i18n="statsFourLabel">в ручном разборе переписок</p>
               </article>
             </div>
           </div>
@@ -108,28 +120,28 @@
 
         <section class="section proof-section" id="proof">
           <div class="section-heading reveal">
-            <p class="section-kicker">До и после внедрения</p>
-            <h2>Клиника перестает терять лиды между звонками, сменами и чатами.</h2>
+            <p class="section-kicker" data-i18n="proofKicker">До и после внедрения</p>
+            <h2 data-i18n="proofHeading">Клиника перестает терять лиды между звонками, сменами и чатами.</h2>
           </div>
 
           <div class="contrast-board">
             <article class="contrast-column negative reveal">
-              <h3>Сейчас</h3>
+              <h3 data-i18n="proofNowTitle">Сейчас</h3>
               <ul>
-                <li>Лиды теряются, потому что не успели ответить вовремя</li>
-                <li>Рабочий WhatsApp клиники превращается в бесконечный шум</li>
-                <li>До 30% пациентов не получают ответ в тот же день</li>
-                <li>Администратор вручную уточняет одно и то же десятки раз</li>
+                <li data-i18n="proofNowItem1">Лиды теряются, потому что не успели ответить вовремя</li>
+                <li data-i18n="proofNowItem2">Рабочий WhatsApp клиники превращается в бесконечный шум</li>
+                <li data-i18n="proofNowItem3">До 30% пациентов не получают ответ в тот же день</li>
+                <li data-i18n="proofNowItem4">Администратор вручную уточняет одно и то же десятки раз</li>
               </ul>
             </article>
 
             <article class="contrast-column positive reveal">
-              <h3>DentDesk</h3>
+              <h3 data-i18n="proofThenTitle">DentDesk</h3>
               <ul>
-                <li>ИИ-агент запускается за 5 минут под вашу клинику</li>
-                <li>Все диалоги собираются в одном окне без лишнего хаоса</li>
-                <li>Лид автоматически попадает на нужное кресло и филиал</li>
-                <li>Команда получает только уже подготовленного пациента</li>
+                <li data-i18n="proofThenItem1">ИИ-агент запускается за 5 минут под вашу клинику</li>
+                <li data-i18n="proofThenItem2">Все диалоги собираются в одном окне без лишнего хаоса</li>
+                <li data-i18n="proofThenItem3">Лид автоматически попадает на нужное кресло и филиал</li>
+                <li data-i18n="proofThenItem4">Команда получает только уже подготовленного пациента</li>
               </ul>
             </article>
           </div>
@@ -137,8 +149,8 @@
 
         <section class="section features-section">
           <div class="section-heading narrow reveal">
-            <p class="section-kicker">Что получает клиника</p>
-            <h2>
+            <p class="section-kicker" data-i18n="featuresKicker">Что получает клиника</p>
+            <h2 data-i18n="featuresHeading">
               Не просто чат-бот, а операционный слой для записи, подтверждения и
               перераспределения потока.
             </h2>
@@ -147,8 +159,8 @@
           <div class="feature-grid">
             <article class="feature-card reveal">
               <p class="feature-index">01</p>
-              <h3>Запись без очереди на ответ</h3>
-              <p>
+              <h3 data-i18n="featureOneTitle">Запись без очереди на ответ</h3>
+              <p data-i18n="featureOneText">
                 DentDesk ведет первый диалог, собирает контекст и доводит
                 пациента до подтверждения, пока администратор занят живым
                 приемом.
@@ -156,16 +168,16 @@
             </article>
             <article class="feature-card reveal">
               <p class="feature-index">02</p>
-              <h3>Единый центр диалогов</h3>
-              <p>
+              <h3 data-i18n="featureTwoTitle">Единый центр диалогов</h3>
+              <p data-i18n="featureTwoText">
                 Все новые обращения, статусы и перезапуски сценариев собраны в
                 одном интерфейсе вместо разбросанных чатов и заметок.
               </p>
             </article>
             <article class="feature-card reveal">
               <p class="feature-index">03</p>
-              <h3>Маршрутизация по профилю врача</h3>
-              <p>
+              <h3 data-i18n="featureThreeTitle">Маршрутизация по профилю врача</h3>
+              <p data-i18n="featureThreeText">
                 Система понимает тип услуги, филиал, срочность и корректно
                 направляет лида туда, где его можно закрыть в запись быстрее.
               </p>
@@ -173,41 +185,41 @@
           </div>
 
           <div class="ticker reveal" aria-label="Ключевые преимущества">
-            <span>WhatsApp</span>
-            <span>Сценарии записи</span>
-            <span>Подтверждение визита</span>
-            <span>Распределение по филиалам</span>
-            <span>Повторный прогрев</span>
+            <span data-i18n="tickerItemOne">WhatsApp</span>
+            <span data-i18n="tickerItemTwo">Сценарии записи</span>
+            <span data-i18n="tickerItemThree">Подтверждение визита</span>
+            <span data-i18n="tickerItemFour">Распределение по филиалам</span>
+            <span data-i18n="tickerItemFive">Повторный прогрев</span>
           </div>
         </section>
 
         <section class="section workflow-section">
           <div class="section-heading reveal">
-            <p class="section-kicker">Сценарий за один день</p>
-            <h2>Команда видит только то, что требует решения человеком.</h2>
+            <p class="section-kicker" data-i18n="workflowKicker">Сценарий за один день</p>
+            <h2 data-i18n="workflowHeading">Команда видит только то, что требует решения человеком.</h2>
           </div>
 
           <div class="workflow-grid">
             <article class="workflow-step reveal">
               <span class="step-number">1</span>
-              <h3>Пациент пишет</h3>
-              <p>
+              <h3 data-i18n="workflowStepOneTitle">Пациент пишет</h3>
+              <p data-i18n="workflowStepOneText">
                 DentDesk отвечает моментально, уточняет услугу, филиал и желаемое
                 время, не заставляя человека ждать свободного администратора.
               </p>
             </article>
             <article class="workflow-step reveal">
               <span class="step-number">2</span>
-              <h3>Система квалифицирует лид</h3>
-              <p>
+              <h3 data-i18n="workflowStepTwoTitle">Система квалифицирует лид</h3>
+              <p data-i18n="workflowStepTwoText">
                 Запрос раскладывается по типу услуги, врачу, срочности и этапу
                 воронки. Повторные вопросы и неясные кейсы отдаются сотруднику.
               </p>
             </article>
             <article class="workflow-step reveal">
               <span class="step-number">3</span>
-              <h3>Кресло получает подготовленного пациента</h3>
-              <p>
+              <h3 data-i18n="workflowStepThreeTitle">Кресло получает подготовленного пациента</h3>
+              <p data-i18n="workflowStepThreeText">
                 Команда видит собранный контекст, подтвержденный слот и историю
                 диалога, а не сырой поток сообщений без структуры.
               </p>
@@ -217,50 +229,54 @@
 
         <section class="section contact-section" id="contact">
           <div class="contact-copy reveal">
-            <p class="section-kicker">Контакты</p>
-            <h2>Покажем, как DentDesk встраивается в вашу клинику без долгого запуска.</h2>
-            <p>
+            <p class="section-kicker" data-i18n="contactKicker">Контакты</p>
+            <h2 data-i18n="contactHeading">Покажем, как DentDesk встраивается в вашу клинику без долгого запуска.</h2>
+            <p data-i18n="contactText">
               Оставьте номер WhatsApp и имя. Мы свяжемся, покажем сценарий на
               ваших кейсах и соберем первую рабочую конфигурацию под филиалы,
               услуги и загрузку команды.
             </p>
             <div class="contact-meta">
-              <a href="mailto:hello@dentdesk.ai">hello@dentdesk.ai</a>
-              <span>Ответ в течение рабочего дня</span>
+              <a href="mailto:dentdesk.kz@gmail.com" data-i18n="contactEmailLabel">dentdesk.kz@gmail.com</a>
+              <a href="https://wa.me/77058106425" class="contact-whatsapp" data-i18n="contactWhatsappLabel">WhatsApp</a>
+              <span data-i18n="contactEmailNote">Ответ в течение рабочего дня</span>
             </div>
           </div>
 
           <form class="lead-form reveal" data-lead-form novalidate>
-            <p class="form-kicker">Стартовая консультация</p>
+            <p class="form-kicker" data-i18n="formKicker">Стартовая консультация</p>
             <label>
-              Номер WhatsApp
+              <span data-i18n="inputPhoneLabel">Номер WhatsApp</span>
               <input
                 type="tel"
                 name="phone"
                 inputmode="tel"
                 placeholder="+7 (700) 123-45-67"
+                data-i18n-placeholder="inputPhonePlaceholder"
                 required
               />
             </label>
             <label>
-              Имя
+              <span data-i18n="inputNameLabel">Имя</span>
               <input
                 type="text"
                 name="name"
                 placeholder="Александр Пушкин"
+                data-i18n-placeholder="inputNamePlaceholder"
                 required
               />
             </label>
             <label>
-              Клиника
+              <span data-i18n="inputClinicLabel">Клиника</span>
               <input
                 type="text"
                 name="clinic"
                 placeholder="Dent Smile на Абая"
+                data-i18n-placeholder="inputClinicPlaceholder"
                 required
               />
             </label>
-            <button class="button-primary submit-button" type="submit">
+            <button class="button-primary submit-button" type="submit" data-i18n="formSubmit">
               Отправить
             </button>
             <p class="form-feedback" aria-live="polite"></p>
@@ -269,8 +285,8 @@
       </main>
 
       <footer class="footer">
-        <p>DentDesk</p>
-        <p>ИИ-инфраструктура для стоматологий</p>
+        <p data-i18n="footerTitle">DentDesk</p>
+        <p data-i18n="footerSubtitle">ИИ-инфраструктура для стоматологий</p>
       </footer>
     </div>
 
@@ -288,41 +304,45 @@
           type="button"
           aria-label="Закрыть"
           data-close-modal
+          data-i18n-aria-label="modalCloseLabel"
         >
           &times;
         </button>
-        <p class="form-kicker">Не упускайте лиды</p>
-        <h2 id="lead-modal-title">Начните работу с DentDesk</h2>
+        <p class="form-kicker" data-i18n="modalKicker">Не упускайте лиды</p>
+        <h2 id="lead-modal-title" data-i18n="modalTitle">Начните работу с DentDesk</h2>
         <form class="lead-form compact" data-lead-form novalidate>
           <label>
-            Номер WhatsApp
+            <span data-i18n="inputPhoneLabel">Номер WhatsApp</span>
             <input
               type="tel"
               name="phone"
               inputmode="tel"
               placeholder="+7 (700) 123-45-67"
+              data-i18n-placeholder="inputPhonePlaceholder"
               required
             />
           </label>
           <label>
-            Имя
+            <span data-i18n="inputNameLabel">Имя</span>
             <input
               type="text"
               name="name"
               placeholder="Александр Пушкин"
+              data-i18n-placeholder="inputNamePlaceholder"
               required
             />
           </label>
           <label>
-            Клиника
+            <span data-i18n="inputClinicLabel">Клиника</span>
             <input
               type="text"
               name="clinic"
               placeholder="Dent Smile на Абая"
+              data-i18n-placeholder="inputClinicPlaceholder"
               required
             />
           </label>
-          <button class="button-primary submit-button" type="submit">
+          <button class="button-primary submit-button" type="submit" data-i18n="formSubmit">
             Отправить
           </button>
           <p class="form-feedback" aria-live="polite"></p>
