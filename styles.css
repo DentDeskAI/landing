@@ -748,6 +748,11 @@ input {
     text-align: center;
   }
 
+  .lang-switcher {
+    flex: none;
+    margin-left: auto;
+  }
+
   .section {
     padding: 34px 0;
   }

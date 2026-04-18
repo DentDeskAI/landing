@@ -330,9 +330,14 @@
     "kz": "WhatsApp нөмірі мен атын қалдырыңыз. Біз сізбен байланысып, сіздің кейстеріңіз бойынша жұмыс сценариін көрсетіп, филиалдар, қызметтер және команда жүктемесіне алғашқы жұмыс конфигурациясын құрамыз."
   },
   "contactEmailLabel": {
-    "en": "hello@dentdesk.ai",
-    "ru": "hello@dentdesk.ai",
-    "kz": "hello@dentdesk.ai"
+    "en": "dentdesk.kz@gmail.com",
+    "ru": "dentdesk.kz@gmail.com",
+    "kz": "dentdesk.kz@gmail.com"
+  },
+  "contactWhatsappLabel": {
+    "en": "WhatsApp",
+    "ru": "WhatsApp",
+    "kz": "WhatsApp"
   },
   "contactEmailNote": {
     "en": "Reply during business hours",
