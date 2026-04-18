@@ -204,6 +204,29 @@ const saveLead = (payload) => {
   }
 };
 
+const buildLeadMessage = ({ phone, name, clinic }) => {
+  return [
+    "Запрос с сайта DentDesk",
+    "",
+    `Номер WhatsApp: ${phone}`,
+    `Имя: ${name}`,
+    `Клиника: ${clinic}`,
+    "",
+    `Страница: ${window.location.href}`,
+  ].join("\n");
+};
+
+const buildMailtoLink = ({ phone, name, clinic }) => {
+  const subject = encodeURIComponent("Записаться на консультацию");
+  const body = encodeURIComponent(buildLeadMessage({ phone, name, clinic }));
+  return `mailto:dentdesk.kz@gmail.com?subject=${subject}&body=${body}`;
+};
+
+const sendLeadByMail = (payload) => {
+  const mailto = buildMailtoLink(payload);
+  window.open(mailto, "_blank");
+};
+
 leadForms.forEach((form) => {
   const feedback = form.querySelector(".form-feedback");
 
@@ -230,7 +253,9 @@ leadForms.forEach((form) => {
       return;
     }
 
-    saveLead({ phone, name, clinic });
+    const payload = { phone, name, clinic };
+    saveLead(payload);
+    sendLeadByMail(payload);
 
     feedback.textContent = getText("formSuccess");
     feedback.classList.add("is-success");
