@@ -5,6 +5,8 @@ Static landing page for DentDesk.
 ## Run
 
 Open [index.html](./index.html) directly in a browser, or serve the folder with any static file server.
+or you can run:
+<code> python3 -m http.server 8888 </code>
 
 ## Notes
 
