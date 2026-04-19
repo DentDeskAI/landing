@@ -27,22 +27,57 @@
   <body>
     <div class="site-shell">
       <header class="topbar">
-          <a class="brand" href="#top" aria-label="DentDesk" data-i18n-aria-label="brandText">
+        <a class="brand" href="#top" aria-label="DentDesk" data-i18n-aria-label="brandText">
           <span class="brand-mark"></span>
           <span class="brand-text" data-i18n="brandText">DentDesk</span>
         </a>
-        <nav class="topnav" aria-label="Основная навигация">
-          <a href="#proof" data-i18n="navPlatform">Платформа</a>
-          <a href="#contact" data-i18n="navContact">Контакты</a>
-          <div class="lang-switcher" role="group" aria-label="Language selector">
-            <button type="button" class="lang-switcher-item" data-lang="ru">RU</button>
-            <button type="button" class="lang-switcher-item" data-lang="en">EN</button>
-            <button type="button" class="lang-switcher-item" data-lang="kz">KZ</button>
-          </div>
-          <button class="nav-login" type="button" data-open-modal data-i18n="navLogin">
-            Войти
+        <div class="topbar-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="site-nav"
+            aria-label="Открыть меню"
+            data-nav-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-        </nav>
+          <nav class="topnav" id="site-nav" aria-label="Основная навигация">
+            <div class="nav-links">
+              <a href="#proof" data-i18n="navPlatform">Платформа</a>
+              <a href="#contact" data-i18n="navContact">Контакты</a>
+              <button class="nav-login" type="button" data-open-modal data-i18n="navLogin">
+                Войти
+              </button>
+            </div>
+            <div class="lang-switcher" aria-label="Language selector">
+              <span class="lang-switcher-label" data-i18n="languageMenuTitle">Язык</span>
+              <ul class="lang-switcher-list">
+                <li>
+                  <button type="button" class="lang-switcher-item" data-lang="ru">
+                    <span>RU</span>
+                    <small>Русский</small>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher-item" data-lang="en">
+                    <span>EN</span>
+                    <small>English</small>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="lang-switcher-item" data-lang="kz">
+                    <span>KZ</span>
+                    <small>Қазақша</small>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 
       <main>

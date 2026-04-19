@@ -5,6 +5,13 @@ const closeButtons = document.querySelectorAll("[data-close-modal]");
 const leadForms = document.querySelectorAll("[data-lead-form]");
 const revealItems = document.querySelectorAll(".reveal");
 const modalForms = modal ? modal.querySelectorAll("[data-lead-form]") : [];
+const nav = document.querySelector(".topnav");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const navLinks = nav ? nav.querySelectorAll("a, button") : [];
+
+if (nav && !nav.id) {
+  nav.id = "site-nav";
+}
 
 const STORAGE_KEY = "dentdesk-language";
 const DEFAULT_LANGUAGE = "ru";
@@ -109,6 +116,11 @@ const translatePage = async (lang = currentLanguage) => {
   }
 
   updateLanguageUI();
+
+  if (navToggle) {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-label", getNavToggleLabel(isOpen));
+  }
 };
 
 const setLanguage = (lang) => {
@@ -150,8 +162,37 @@ const setModalState = (isOpen) => {
   }
 };
 
+const getNavToggleLabel = (isOpen) => {
+  const key = isOpen ? "navCloseMenu" : "navOpenMenu";
+  return getText(key) || (isOpen ? "Закрыть меню" : "Открыть меню");
+};
+
+const setNavState = (isOpen) => {
+  if (!nav || !navToggle) {
+    return;
+  }
+
+  nav.classList.toggle("is-open", isOpen);
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+  navToggle.setAttribute("aria-label", getNavToggleLabel(isOpen));
+};
+
 openButtons.forEach((button) => {
-  button.addEventListener("click", () => setModalState(true));
+  button.addEventListener("click", () => {
+    setNavState(false);
+    setModalState(true);
+  });
+});
+
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+    setNavState(!isOpen);
+  });
+}
+
+navLinks.forEach((element) => {
+  element.addEventListener("click", () => setNavState(false));
 });
 
 const languageButtons = document.querySelectorAll(".lang-switcher-item");
@@ -170,7 +211,19 @@ closeButtons.forEach((button) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
+    setNavState(false);
     setModalState(false);
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!nav || !navToggle || navToggle.getAttribute("aria-expanded") !== "true") {
+    return;
+  }
+
+  const target = event.target;
+  if (target instanceof Node && !nav.contains(target) && !navToggle.contains(target)) {
+    setNavState(false);
   }
 });
 
@@ -218,8 +271,7 @@ const buildLeadMessage = ({ phone, name, clinic }) => {
 
 const buildWhatsAppLink = ({ phone, name, clinic }) => {
   const message = encodeURIComponent(buildLeadMessage({ phone, name, clinic }));
-  const myPhone = 77058106425
-  console.log(myPhone)
+  const myPhone = 77058106425;
   return `https://wa.me/${myPhone}?text=${message}`;
 };
 

@@ -34,6 +34,21 @@
     "ru": "Войти",
     "kz": "Кіру"
   },
+  "navOpenMenu": {
+    "en": "Open menu",
+    "ru": "Открыть меню",
+    "kz": "Мәзірді ашу"
+  },
+  "navCloseMenu": {
+    "en": "Close menu",
+    "ru": "Закрыть меню",
+    "kz": "Мәзірді жабу"
+  },
+  "languageMenuTitle": {
+    "en": "Language",
+    "ru": "Язык",
+    "kz": "Тіл"
+  },
   "heroEyebrow": {
     "en": "Niche AI for dental clinics",
     "ru": "Нишевый ИИ для стоматологий",
